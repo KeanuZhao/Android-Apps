@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Compus Mini BBS</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_register">Register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="post_title_label">Title</string>
+    <string name="post_title_hint">Enter a title for the post</string>
+    <string name="post_details_label">Details</string>
+    <string name="post_comments_label">Comments</string>
+    <string name="publish_own_comment">Public your own comment</string>
+    <string name="posts_title">Posts</string>
+    <string name="admin_posts">Posts waiting for check</string>
+    <string name="delete_crime">Delete</string>
+    <string name="new_post">New Post</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="publish_own_post">Publish your own post</string>
+    <string name="post_details_hint">Enter the details for the post</string>
+    <string name="logout">Logout</string>
+    <string name="show_read">Show Read</string>
+
+
+</resources>
