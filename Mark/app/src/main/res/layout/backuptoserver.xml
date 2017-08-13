@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bupt.wlc.mark.search_result">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/backbutton"
+            android:scaleX="0.2"
+            android:scaleY="0.3" />
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Backup to Server"
+            android:textColor="@android:color/white"
+            android:textSize="11pt" />
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="IP Address:"
+            android:textSize="13pt" />
+
+        <EditText
+            android:id="@+id/ipaddress"
+            android:hint="255.255.255.255"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/shape_corner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="DB Name:"
+            android:textSize="13pt" />
+
+        <EditText
+            android:id="@+id/dbname"
+            android:hint="db_name"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/shape_corner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="User name:"
+            android:textSize="13pt" />
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="username"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/shape_corner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pass word:"
+            android:textSize="13pt" />
+
+        <EditText
+            android:id="@+id/password"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:textColorHint="@android:color/darker_gray"
+            android:background="@drawable/shape_corner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp">
+
+       <Button
+           android:id="@+id/backup"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:text="BACKUP"
+           android:textSize="19pt"
+           android:textColor="@android:color/background_dark"
+           android:background="@drawable/searchresult"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

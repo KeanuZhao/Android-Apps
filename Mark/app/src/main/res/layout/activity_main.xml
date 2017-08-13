@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bupt.wlc.mark.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Please give marks"
+            android:textColor="@android:color/white"
+            android:textSize="11pt" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/groupList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"></ListView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="40dp"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Members"
+                    android:textColor="@color/mainFont"
+                    android:textSize="13pt"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="SurName"
+                        android:textColor="@color/mainFont"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="ForeName"
+                        android:textColor="@color/mainFont"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="Bupt Number"
+                        android:textColor="@color/mainFont"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="QM Number"
+                        android:textColor="@color/mainFont"
+                        android:textSize="8pt"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/groupNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="Now please give marks"
+                    android:textColor="@color/mainFont"
+                    android:textSize="13pt"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/inputName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="80dp"
+                    android:text="inputname"
+                    android:textColor="@color/mainFont"
+                    android:textSize="12pt" />
+
+                <ListView
+                    android:id="@+id/markingList1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"></ListView>
+
+                <TextView
+                    android:id="@+id/inputName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="inputname"
+                    android:textColor="@color/mainFont"
+                    android:textSize="12pt" />
+
+                <ListView
+                    android:id="@+id/markingList2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"></ListView>
+
+                <TextView
+                    android:id="@+id/markMateria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_corner"
+                    android:minHeight="60dp"
+                    android:paddingLeft="10dp"
+                    android:text="you liang putong cha "
+                    android:textColor="#ECB5A1"
+                    android:textSize="8pt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total MARK:"
+                        android:textColor="@color/mainFont"
+                        android:textSize="10pt" />
+
+                    <TextView
+                        android:id="@+id/totalMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/mainFont"
+                        android:textSize="10pt" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/shape_corner"
+                    android:gravity="top"
+                    android:hint="Write comments here..."
+                    android:minHeight="70dp"
+                    android:textColor="@color/mainFont" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/saving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/savebutton"
+                        android:scaleX="0.4"
+                        android:scaleY="0.3" />
+
+                    <Button
+                        android:id="@+id/reseting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/resetbutton"
+                        android:scaleX="0.4"
+                        android:scaleY="0.3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/marking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zimarkinghigh"
+            android:gravity="center_vertical"
+            android:scaleX="0.3"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/searching"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zisearchlow"
+            android:scaleX="0.3"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/managing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zisettinglow"
+            android:scaleX="0.4"
+            android:scaleY="0.8" />
+
+    </LinearLayout>
+</LinearLayout>

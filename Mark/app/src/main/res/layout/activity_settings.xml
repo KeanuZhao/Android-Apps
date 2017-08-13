@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.bupt.wlc.mark.settings">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Management"
+            android:textColor="@android:color/white"
+            android:textSize="11pt" />
+
+         </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/imortstu"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/importstuinfor"
+            android:scaleX="0.5"
+            android:scaleY="0.4" />
+
+        <Button
+            android:id="@+id/changeMateria"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/modifycriteria"
+            android:scaleX="0.5"
+            android:scaleY="0.4"  />
+
+        <Button
+            android:id="@+id/exportinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/exportinformation"
+            android:scaleX="0.5"
+            android:scaleY="0.4" />
+
+        <Button
+            android:id="@+id/backtoserver"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/backup"
+            android:scaleX="0.5"
+            android:scaleY="0.4"  />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/marking"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zimarkinglow"
+            android:gravity="center_vertical"
+            android:scaleX="0.3"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/searching"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zisearchlow"
+            android:scaleX="0.3"
+            android:scaleY="0.8" />
+
+        <Button
+            android:id="@+id/managing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/zisettinghign"
+            android:scaleX="0.4"
+            android:scaleY="0.8" />
+
+    </LinearLayout>
+
+</LinearLayout>

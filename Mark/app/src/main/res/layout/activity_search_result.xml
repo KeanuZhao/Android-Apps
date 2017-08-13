@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bupt.wlc.mark.search_result">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/backbutton"
+            android:scaleX="0.2"
+            android:scaleY="0.3" />
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="Search Result"
+            android:textSize="11pt" />
+
+       </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <!-- groupNumber的那一行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/groupNumber" />
+
+                    <TextView
+                        android:id="@+id/groupID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="9pt"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="Surname"
+                        android:textSize="6pt" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="Forename"
+                        android:textSize="6pt" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="BUPT Number"
+                        android:textSize="6pt" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/searchresult"
+                        android:gravity="center"
+                        android:text="QM Number"
+                        android:textSize="6pt" />
+
+                </LinearLayout>
+                <!-- 小组信息列表 -->
+                <ListView
+                    android:id="@+id/groupNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></ListView>
+
+                <EditText
+                    android:id="@+id/remarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/shape_corner"
+                    android:gravity="top"
+                    android:hint="Write comments here..."
+                    android:minHeight="70dp"
+                    android:textColor="@color/mainFont" />
+
+                <TextView
+                    android:id="@+id/markMateria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/shape_corner"
+                    android:minHeight="60dp"
+                    android:paddingLeft="10dp"
+                    android:textSize="8pt"
+                    android:text="you liang putong cha "
+                    android:textColor="#ECB5A1" />
+
+                <ListView
+                    android:id="@+id/groupList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"></ListView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Marks"
+                    android:textColor="@color/mainFont"
+                    android:textSize="13pt"
+                    android:textStyle="bold" />
+
+                <!-- 评分细则 -->
+                <TextView
+                    android:id="@+id/inputName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="80dp"
+                    android:text="inputname"
+                    android:textColor="@color/mainFont"
+                    android:textSize="12pt" />
+
+                <ListView
+                    android:id="@+id/markingList1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"></ListView>
+
+                <TextView
+                    android:id="@+id/inputName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="inputname"
+                    android:textColor="@color/mainFont"
+                    android:textSize="12pt" />
+
+                <ListView
+                    android:id="@+id/markingList2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="100dp"></ListView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total MARK:"
+                        android:textColor="@color/mainFont"
+                        android:textSize="10pt" />
+
+                    <TextView
+                        android:id="@+id/totalMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/mainFont"
+                        android:textSize="10pt" />
+                </LinearLayout>
+
+
+                <!-- 三个按钮,save,change,reset -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/saving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/savebutton"
+                        android:scaleX="0.4"
+                        android:scaleY="0.3" />
+
+                    <Button
+                        android:id="@+id/reseting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/resetbutton"
+                        android:scaleX="0.4"
+                        android:scaleY="0.3" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

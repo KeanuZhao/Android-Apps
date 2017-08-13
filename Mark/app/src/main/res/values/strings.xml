@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mark</string>
+    <string name="searchTip">Please input Group Number, student’s BUPT Number, or QM Number to find the group you want. And input “max” to search the highest marks, and “min” for the lowest one.</string>
+    <string name="groupNumber">Group Number： </string>
+    <string name="changeMate1">Column of Marking Criteria</string>
+    <string name="changeMate2">Row of Marks</string>
+    <string name="itm">Input total mark: </string>
+    <string name="irn">Input raw number: </string>
+    <string name="markfrom">Mark from </string>
+    <string name="importTip1">If students information is imported, the current students information and score data will be cleared. Please save or export information before you click "OK".</string>
+    <string name="importTip2">If change mark materia, the current score data will be cleared. Please save or export information before you click "OK".</string>
+    <string name="importTip">Please import student information and Edit mark criteria first!</string>
+</resources>
