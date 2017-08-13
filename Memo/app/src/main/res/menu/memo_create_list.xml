@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item_del_memo"
+        android:icon="@drawable/ic_menu_rabbish"
+        android:orderInCategory="100"
+        android:title="@string/memo_delete"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_share_memo"
+        android:icon="@drawable/ic_menu_file"
+        android:orderInCategory="100"
+        android:title="@string/memo_up_file"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_item_share_picture_memo"
+        android:icon="@drawable/ic_menu_picture"
+        android:orderInCategory="100"
+        android:title="@string/memo_up_picture"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/menu_item_fin_memo"
+        android:icon="@drawable/ic_menu_ok"
+        android:title="@string/login_OK"
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <EditText android:id="@+id/memo_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="@string/memo_title_hint"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/memo_details_label"
+        style="?android:listSeparatorTextViewStyle"/>
+
+    <EditText
+        android:id="@+id/memo_content"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:gravity="start"
+        android:scrollbars="vertical"
+        android:maxLines="18"
+        android:hint="@string/memo_content_hint"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/memo_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/ic_menu_calendar"
+            android:gravity="center"
+            android:text="@string/memo_date_label"/>
+
+        <TextView
+            android:id="@+id/memo_draw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/ic_menu_draw"
+            android:gravity="center"
+            android:text="@string/memo_paint_label"/>
+
+        <TextView
+            android:id="@+id/memo_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/ic_menu_camerab"
+            android:gravity="center"
+            android:text="@string/memo_camera_label"/>
+
+        <TextView
+            android:id="@+id/memo_gallery"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/ic_menu_picture"
+            android:gravity="center"
+            android:text="@string/memo_photo_label"/>
+
+        <TextView
+            android:id="@+id/memo_locate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/ic_menu_locateb"
+            android:gravity="center"
+            android:text="@string/memo_location_label"/>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

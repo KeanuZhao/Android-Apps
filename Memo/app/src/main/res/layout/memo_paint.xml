@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".Activity.PaintActivity" >
+
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorBlack"
+                android:background="#000000"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorBlue"
+                android:background="#0033FF"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorLightBlue"
+                android:background="#33CCFF"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorGreen"
+                android:background="#33FF33"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorYellow"
+                android:background="#FFFF33"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorOrange"
+                android:background="#FF6600"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorRed"
+                android:background="#ff0000"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorViolet"
+                android:background="#9900CC"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorGray"
+                android:background="#999999"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorLightGray"
+                android:background="#CCCCCC"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorCream"
+                android:background="#FFEBCD"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorGold"
+                android:background="#ffd700"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorNavyBlue"
+                android:background="#006699"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorBrown"
+                android:background="#663300"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorDarkGreen"
+                android:background="#339900"/>
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:id="@+id/btnColorPink"
+                android:background="#FF33FF"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

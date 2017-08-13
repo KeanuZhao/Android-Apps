@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Field Work Diary </string>
+    <string name="action_settings">Settings</string>
+    <string name="login_title">Login</string>
+    <string name="login_name_hint">Register an account first</string>
+    <string name="register_name_hint">Password longer than 8 bits</string>
+    <string name="login_user_label">User name</string>
+    <string name="login_password_hint">Password longer than 8 bits</string>
+    <string name="login_pass_label">Password</string>
+    <string name="login_phone_label">Phone Number</string>
+    <string name="login_button">LOGIN</string>
+    <string name="back_label">Back</string>
+    <string name="login_register">Register</string>
+    <string name="login_exit">EXIT</string>
+    <string name="login_OK">OK</string>
+    <string name="label_tool">Tools</string>
+    <string name="reg_list">List</string>
+    <string name="memo_title_label">Title</string>
+    <string name="memo_title_hint">Enter a title for report</string>
+    <string name="memo_delete">Delete</string>
+    <string name="memo_details_label">Details</string>
+    <string name="memo_content_hint">Begin to write your report</string>
+    <string name="memo_location_label">Location</string>
+    <string name="memo_camera_label">Camera</string>
+    <string name="memo_photo_label">Photo</string>
+    <string name="memo_paint_label">Paint</string>
+    <string name="memo_date_label">Date</string>
+    <string name="new_memo">New Memo</string>
+    <string name="date_picker_title">Report Date:</string>
+    <string name="finish_memo">OK</string>
+    <string name="reregister_label">Click on Register to create other accounts</string>
+
+    <string name="confirm_dialog_title">Confirm</string>
+    <string name="confirm_label">You have created an account </string>
+
+    <string name="memo_up_file">Upload File</string>
+    <string name="memo_up_picture">Upload Picture</string>
+
+
+
+</resources>
